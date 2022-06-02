@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+        <style>
+            div {
+                padding: 12px;
+            }
+            input{
+                background-color: azure;
+                color: red;
+            }
+            button {
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                box-shadow:5px 5px 5px lightsalmon;
+            }
+            button:hover{
+                background-color: rgb(254, 201, 201);
+            }
+        </style>
+	</head>
+	<body>
+        <div>
+            <input type="text" placeholder="Enter your First name" id="fname" />
+            <input type="text" placeholder="Enter your Last name" id="lname" />
+        </div>
+        <div>
+            <button onclick="showFirstName()">FIRSTNAME</button>
+            <button onclick="showLastName()">LASTNAME</button>
+            <button onclick="showFullName()">FIRSTNAME-LASTNAME</button>
+        </div>
+		<script type="text/javascript">
+            function showFirstName() {
+			    // Complete to show an alert with your first name 
+                let name=document.getElementById("fname").value;
+                alert(name)
+			}
+
+            function showLastName() {
+                // Complete to show an alert with your last name     
+                let name=document.getElementById("lname").value;
+                alert(name)        
+            }
+
+            function showFullName() {
+                // Complete to show an alert with your full name (firstname lastname)
+                let fname=document.getElementById("fname").value;
+                let lname=document.getElementById("lname").value;
+                let flname=fname+" "+lname;
+                alert(flname);                
+            }
+        </script>
+	</body>
+</html>
