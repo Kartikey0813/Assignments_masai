@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai NAVBAR</title>
+    <style>
+        #container {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            justify-content: space-around;
+            margin-top: 20px;
+            text-transform: upper-between;
+            background-color: rgb(250, 250, 250);
+            border-radius: 10px;
+        }
+        #container > div:nth-child(2) {
+            display: flex;
+            width: 60%;
+            margin-top: 10px;
+            justify-content: space-around;
+            margin-right: 100px;
+        }
+        /* #container> div > div>select:hover {
+            background-color: rgb(255, 32, 32);;
+        } */
+        #container> div >div:nth-child(2):hover {
+            color: rgb(255, 32, 32);
+        }
+        #container> div >div:nth-child(3):hover {
+            color: rgb(255, 32, 32);;
+        }
+        #container> div >div:nth-child(4):hover {
+            color: rgb(255, 32, 32);;
+        }
+        #container> div >div:nth-child(5):hover {
+            color: rgb(255, 32, 32);;
+        }
+        #container> div >div:nth-child(6):hover {
+            color: rgb(255, 32, 32);;
+        }
+        #container> div >div:nth-child(7):hover {
+            background-color: rgb(130, 159, 221);
+        }
+        #container> div >div>button:hover {
+            background-color: rgb(242, 214, 214);
+        }
+        #container > div > div:nth-child(7) {
+            background-color: rgb(208, 247, 234);
+            border-radius: 5px;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            gap: 5px;
+            color: rgb(30, 83, 196);
+        }
+        #container > div:nth-child(1) {
+            padding: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+        select {
+            padding: 10px;
+            border: none;
+            margin-top: 10px;
+        }
+        select:hover {
+            color:rgb(255, 32, 32);;
+        }
+        button {
+            border: none;
+            height: 90%;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: red;
+            border: 1px solid red;
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+        </div>
+        <div>
+            <div>
+                <select>
+                    <option value=""><h4>COURSES</h4></option>
+                </select>
+            </div>
+            <div>
+                <p>FEES & ISA</p>
+            </div>
+            <div><p>ABOUT Us</p></div>
+            <div><p>HIRE FROM US</p></div>
+            <div><p>FAQ</p></div>
+            <div><p>EVENTS</p></div>
+            <div> 
+                <p>REFER & EARN</p>
+                <img src="https://www.masaischool.com/img/referral/hand.png" alt="" width="25px" height="20px">
+            </div>
+            <div>
+                <button>LOGIN</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
