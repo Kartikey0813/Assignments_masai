@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content Manipulation</title>
+    <style>
+        #firstname {
+            color: red;
+        }
+        #lastname {
+            color: green;
+        }
+        #fullname {
+            color: rgb(0, 34, 255);
+        }
+        button {
+            padding: 10px;
+            background-color: aliceblue;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px rgb(192, 192, 192);
+        }
+    </style>
+</head>
+<body>
+	<h1 id="firstname">Hello</h1>
+	<div id="lastname">MASAI</div>
+	<p id="fullname">School</p>
+	<hr/>
+	<button onclick="setFirstName()">FIRSTNAME</button>
+	<button onclick="setLastName()">LASTNAME</button>
+	<button onclick="setFullName()">FIRSTNAME - LASTNAME</button>
+	<button onclick="resetDefaults()">RESET DEFAULTS</button>
+	<script type="text/javascript">
+		function setFirstName() {
+			// Change the content of h1 to your first name
+            document.getElementById("firstname").innerText="Kartikey"
+		}
+
+		function setLastName() {
+			// Change the content of div to your last name
+            document.getElementById("lastname").innerText = "Mishra"
+		}
+
+		function setFullName() {
+			// Change the content of p to your full name (firstname - lastname)
+            document.getElementById("fullname").innerText = "Kartikey - Mishra"
+		}
+
+		function resetDefaults(){
+			// reset the firstname, lastname, and fullname to empty values
+            document.getElementById("firstname").innerText = "Blank Space"
+            document.getElementById("lastname").innerText = "Blank Space"
+            document.getElementById("fullname").innerText = "Blank Space"
+		}
+	</script>
+</body>
+</html>
