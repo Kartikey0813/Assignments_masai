@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            background-color: aliceblue;
+            border-radius: 5px;
+            color: rgb(18, 217, 0);
+        }
+        button{
+            background-color: aqua;
+            color: brown;
+            padding: 10px;
+            border: none;
+            box-shadow: 4px 4px 4px 4px rgb(198, 198, 198);
+            border-radius: 5px;
+        }
+        div{
+            padding: 20px;
+            height: 10px;
+            width: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="Enter the 1st No. here" id="1stno" />
+        <input type="number" placeholder="Enter the 2st No. here" id="2ndno" />
+    </div>
+   <div>
+    <button onclick="showAdd()">Add</button>
+	<button onclick="showSubtract()">Subtract</button>
+	<button onclick="showMultiply()">Multiply</button>
+	<button onclick="showDivide()">Divide</button>
+   </div>  
+</body>
+<script type="text/javascript" >
+    function showAdd() {
+			let first=document.getElementById("1stno").value;
+            let second=document.getElementById("2ndno").value;
+            let a=parseInt(first);
+            let b=parseInt(second);
+            let add=a+b;
+            alert(add);
+		}
+
+		function showSubtract() {
+			// Show the alert of the selected Gender
+            let first=document.getElementById("1stno").value;
+            let second=document.getElementById("2ndno").value;
+            let a=parseInt(first);
+            let b=parseInt(second);
+            let add=a-b;
+            alert(add);
+		}
+
+		function showMultiply() {
+			// Show the alert of the filled email
+            let first=document.getElementById("1stno").value;
+            let second=document.getElementById("2ndno").value;
+            let a=parseInt(first);
+            let b=parseInt(second);
+            let add=a*b;
+            alert(add);
+		}
+
+		function showDivide() {
+			// Show the alert of the filled mobile
+            let first=document.getElementById("1stno").value;
+            let second=document.getElementById("2ndno").value;
+            let a=parseInt(first);
+            let b=parseInt(second);
+            let add=a/b;
+            alert(add);
+		}
+</script>
+</html>
