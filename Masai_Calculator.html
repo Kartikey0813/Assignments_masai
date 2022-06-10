@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Layout {
+            margin: auto;
+            box-shadow: 2px 2px 5px 5px rgb(201, 199, 199);
+            height: 70vh;
+            width: 30vw;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(4,80px);
+            grid-template-rows: repeat(5,80px);
+            gap: 10px 10px;
+            justify-content: center;
+            align-content: center;
+        }
+        #Layout > div {
+            box-shadow: 2px 2px 4px 4px rgb(201, 199, 199);
+            border-radius: 15px;
+            justify-content: center;
+            text-align: center;
+        }
+        #Layout > div:nth-child(1) {
+            grid-area: 1/1/2/5;
+        }
+        #Layout > div:nth-child(5) {
+            background-color: black;
+            color: white;
+        }
+        #Layout > div:nth-child(9) {
+            background-color: black;
+            color: white;
+        }
+        #Layout > div:nth-child(13) {
+            background-color: black;
+            color: white;
+        }
+        #Layout > div:nth-child(14) {
+            background-color: red;
+            color: white;
+        }
+        #Layout > div:nth-child(16) {
+            background-color: black;
+            color: white;
+        }
+        #Layout > div:nth-child(17) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:rgb(35, 35, 247)">Masai Calculator</h1>
+    <div id="Layout">
+        <div>
+
+        </div>
+        <div><h1>1</h1></div>
+        <div><h1>2</h1></div>
+        <div><h1>3</h1></div>
+        <div><h1>+</h1></div>
+        <div><h1>4</h1></div>
+        <div><h1>5</h1></div>
+        <div><h1>6</h1></div>
+        <div><h1>-</h1></div>
+        <div><h1>7</h1></div>
+        <div><h1>8</h1></div>
+        <div><h1>9</h1></div>
+        <div><h1>X</h1></div>
+        <div><h1>C</h1></div>
+        <div><h1>0</h1></div>
+        <div><h1>=</h1></div>
+        <div><h1>/</h1></div>
+    </div>
+</body>
+</html>
